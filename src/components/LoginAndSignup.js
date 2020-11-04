@@ -94,8 +94,7 @@ function LoginAndSignup(props) {
             <div className="text-center">
                 <h5>Welcome to TODO App</h5>
             </div>
-            <div className="width-50 m-auto">
-
+            <div className="m-auto">
                 <div className="display-flex-column-even">
                     <div>{error && <Alert variant="danger">{error}</Alert>}</div>
                     <div>
@@ -105,7 +104,7 @@ function LoginAndSignup(props) {
                         <input className="form-control" placeholder="password" type="password" name="password" value={password} onChange={handleChange} />
                     </div>
                 </div>
-                <div className="display-flex-row-even">
+                <div className="login-buttons">
                     <div><Button type="button" onClick={login}>Login</Button></div>
                     <div><Button type="button" onClick={register}>Sign Up</Button></div>
                 </div>
